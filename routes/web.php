@@ -38,3 +38,7 @@ Route::middleware(['auth'])->group(function () {
 Route::resource('requests', App\Http\Controllers\RequestController::class)->middleware('auth');
 Route::resource('requests', \App\Http\Controllers\RequestController::class);
 
+
+Route::get('tesr', function () {
+    return ('test');
+});
